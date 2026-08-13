@@ -18,26 +18,26 @@
       "options": [
         {
           "label": "A maistry, working to your instructions",
-          "cost": 40000,
-          "note": "Shivanna has built four houses on this road. He will do whatever you specify, and decide whatever you don't.",
+          "cost": 35000,
+          "note": "Shivanna has built four houses on this road. He runs the labour and works to what you specify — and decides whatever you don't.",
           "axis": "owner",
           "val": 0,
           "hires": "maistry",
           "img": "img/1a-maistry.jpg"
         },
         {
-          "label": "A contractor, turnkey",
-          "cost": 0,
-          "note": "One rate per square foot, materials and labour together. His 10–15% margin is already inside that rate, so today it costs you nothing extra.",
+          "label": "A contractor to run the build",
+          "cost": 90000,
+          "note": "Runs the site day to day, mobilises the labour, and handles the sanction paperwork. One point of contact for everything.",
           "axis": "owner",
           "val": 1,
           "hires": "contractor",
           "img": "img/1b-contractor.jpg"
         },
         {
-          "label": "A civil and structural engineer",
-          "cost": 35000,
-          "note": "Soil bearing, foundation, columns, beams, steel detailing. He can sign the plan himself.",
+          "label": "A civil engineer",
+          "cost": 170000,
+          "note": "Structure, foundation and the sanitation system — tank sizing, baffles, calculations. Site visits and material checks through the build. He can sign the plan himself.",
           "axis": "owner",
           "val": 2,
           "hires": "engineer",
@@ -45,8 +45,8 @@
         },
         {
           "label": "An architect",
-          "cost": 120000,
-          "note": "Floor plans, elevations, plumbing and electrical layouts, full working drawings. Feels like a lot for a house this size.",
+          "cost": 250000,
+          "note": "Full drawings, working drawings, consultants coordinated, supervision, and he certifies the bills. The tank sits under his seal either way.",
           "axis": "owner",
           "val": 2,
           "hires": "architect",

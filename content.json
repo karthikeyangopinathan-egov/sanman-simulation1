@@ -1,0 +1,418 @@
+{
+  "meta": {
+    "eyebrow": "SANMAN · a decision simulation",
+    "title": "TWENTY YEARS",
+    "title2": "",
+    "intro1": "You are about to build a house. Eight decisions, none of them dramatic. \nEvery one of them is a decision real people make, for reasons that make sense at the time.",
+    "intro2": "",
+    "cta": "Start building",
+    "footnote": "Roughly 6 minutes. Based on field interviews with homeowners, masons, contractors, engineers and architects in Karnataka and inputs from experts in Tamil Nadu.",
+    "banner": "img/b0-intro.jpg"
+  },
+  "stages": [
+    {
+      "eyebrow": "The brief",
+      "title": "Who will build it?",
+      "scene": "You've bought a 30×40 site in a panchayat area east of the city. The budget is about ₹40 lakh. Your cousin says you don't need anyone fancy — his house came up fine.",
+      "banner": "img/b1-brief.jpg",
+      "options": [
+        {
+          "label": "Maistry Shivanna",
+          "cost": 0,
+          "note": "He built four houses on this street. Works from memory. No drawings.",
+          "axis": "owner",
+          "val": 0,
+          "hires": "maistry",
+          "img": "img/1a-maistry.jpg"
+        },
+        {
+          "label": "A contractor firm",
+          "cost": 60000,
+          "note": "Does the whole thing and handles the sanction paperwork.",
+          "axis": "owner",
+          "val": 1,
+          "hires": "contractor",
+          "img": "img/1b-contractor.jpg"
+        },
+        {
+          "label": "A civil engineer",
+          "cost": 95000,
+          "note": "Will get the structure right, and can sign the plan himself.",
+          "axis": "owner",
+          "val": 2,
+          "hires": "engineer",
+          "img": "img/1c-engineer.jpg"
+        },
+        {
+          "label": "An architect",
+          "cost": 220000,
+          "note": "Full drawings, working drawings, the lot. Feels like a lot for a house this size.",
+          "axis": "owner",
+          "val": 2,
+          "hires": "architect",
+          "img": "img/1d-architect.jpg"
+        }
+      ]
+    },
+    {
+      "eyebrow": "The site",
+      "title": "Where does the tank go?",
+      "scene": "The vastu consultant has fixed the borewell in the north-east. He says the waste should sit south-west. The only side a vehicle can reach is the east, along the drive.",
+      "banner": "img/b2-site.jpg",
+      "options": [
+        {
+          "label": "South-west corner, as advised",
+          "cost": 0,
+          "note": "Leaves a 0.7 m gap to the compound wall. Nothing can drive in.",
+          "axis": "reach",
+          "val": 0,
+          "img": "img/2a-southwest.jpg"
+        },
+        {
+          "label": "West side, behind the kitchen",
+          "cost": 0,
+          "note": "A long hose could reach it from the gate. A truck could not.",
+          "axis": "reach",
+          "val": 1,
+          "img": "img/2b-west.jpg"
+        },
+        {
+          "label": "East, along the drive",
+          "cost": 0,
+          "note": "A truck can back right up to it. You lose the second parking space.",
+          "axis": "reach",
+          "val": 2,
+          "img": "img/2c-east.jpg"
+        }
+      ]
+    },
+    {
+      "eyebrow": "The structure",
+      "title": "What kind of tank?",
+      "scene": "Shivanna quotes for cement rings the same afternoon. The alternatives need somebody to actually draw the thing.",
+      "banner": "img/b3-structure.jpg",
+      "options": [
+        {
+          "label": "Three precast cement rings, sealed base",
+          "cost": 18000,
+          "note": "What every house on this street has. Ready by Thursday.",
+          "axis": "sound",
+          "val": 0,
+          "img": "img/3a-rings.jpg"
+        },
+        {
+          "label": "Brick chamber, plastered, single compartment",
+          "cost": 38000,
+          "note": "Solid. Watertight if the plaster is done properly.",
+          "axis": "sound",
+          "val": 1,
+          "img": "img/3b-brick.jpg"
+        },
+        {
+          "label": "Two-chamber tank to IS 2470, with baffles",
+          "cost": 66000,
+          "note": "Needs a drawing and a mason who will follow it.",
+          "axis": "sound",
+          "val": 2,
+          "needsOwner": 1,
+          "lockNote": "Nobody on your team can detail this.",
+          "img": "img/3c-twochamber.jpg"
+        }
+      ]
+    },
+    {
+      "eyebrow": "The lid",
+      "title": "How should it be closed?",
+      "scene": "Shivanna asks how you want the top finished before he pours.",
+      "banner": "img/b4-lid.jpg",
+      "options": [
+        {
+          "label": "Cast the slab straight over it, flush with the ground",
+          "cost": 4000,
+          "note": "No smell, no eyesore, and nothing for the children to fall into.",
+          "axis": "open",
+          "val": 0,
+          "img": "img/4a-flush-slab.jpg"
+        },
+        {
+          "label": "One 300 mm inspection opening with a loose lid",
+          "cost": 7000,
+          "note": "Enough to look in. A man could get an arm down.",
+          "axis": "open",
+          "val": 1,
+          "img": "img/4b-small-opening.jpg"
+        },
+        {
+          "label": "A manhole cover on each chamber, 455 × 610, with a lifting ring",
+          "cost": 15000,
+          "note": "Wide enough to put equipment down. Visible in the yard.",
+          "axis": "open",
+          "val": 2,
+          "img": "img/4c-manhole.jpg"
+        }
+      ]
+    },
+    {
+      "eyebrow": "The pipe",
+      "title": "The vent.",
+      "scene": "A 50 mm pipe is supposed to rise from the tank and carry the gas away above head height. It will be visible from the road.",
+      "banner": "img/b5-vent.jpg",
+      "options": [
+        {
+          "label": "Leave it out",
+          "cost": 0,
+          "note": "The tank is sealed anyway. Why invite the smell into the yard?",
+          "axis": "air",
+          "val": 0,
+          "img": "img/5a-no-vent.jpg"
+        },
+        {
+          "label": "A short stub, 300 mm up, hidden behind the plants",
+          "cost": 2500,
+          "note": "Technically vented. Nobody will notice it.",
+          "axis": "air",
+          "val": 1,
+          "img": "img/5b-stub-vent.jpg"
+        },
+        {
+          "label": "Full vent to 2 m with a mesh cap",
+          "cost": 5000,
+          "note": "You will see it from the gate.",
+          "axis": "air",
+          "val": 2,
+          "img": "img/5c-full-vent.jpg"
+        }
+      ]
+    },
+    {
+      "eyebrow": "The outflow",
+      "title": "Where does the water go?",
+      "scene": "The tank overflows somewhere. That somewhere is your decision, and nobody will ever ask you about it again.",
+      "banner": "img/b6-outflow.jpg",
+      "options": [
+        {
+          "label": "Pipe it to the storm drain at the end of the road",
+          "cost": 6000,
+          "note": "Every house on this street already does this.",
+          "axis": "drain",
+          "val": 0,
+          "img": "img/6a-storm-drain.jpg"
+        },
+        {
+          "label": "A soak pit",
+          "cost": 24000,
+          "note": "Standard. Will need clearing eventually.",
+          "axis": "drain",
+          "val": 1,
+          "img": "img/6b-soak-pit.jpg"
+        },
+        {
+          "label": "Soak pit with a dispersion trench, sized for the soil",
+          "cost": 36000,
+          "note": "The soil here is rocky. Percolation is slow.",
+          "axis": "drain",
+          "val": 2,
+          "img": "img/6c-dispersion.jpg"
+        }
+      ]
+    },
+    {
+      "eyebrow": "The signature",
+      "title": "The paperwork.",
+      "scene": "You're in a panchayat area. Not one house on this street has a sanctioned plan. Getting one takes about six weeks.",
+      "banner": "img/b7-paperwork.jpg",
+      "options": [
+        {
+          "label": "Skip it",
+          "cost": 0,
+          "note": "Nobody checks here. Nobody has ever checked here.",
+          "axis": "signed",
+          "val": 0,
+          "img": "img/7a-skip.jpg"
+        },
+        {
+          "label": "Get the plan sanctioned",
+          "cost": 48000,
+          "note": "The tank will appear on the drawing as a rectangle marked 'ST'.",
+          "axis": "signed",
+          "val": 1,
+          "img": "img/7b-sanctioned.jpg"
+        },
+        {
+          "label": "Get it sanctioned, and ask for the tank to be detailed",
+          "cost": 56000,
+          "note": "Chambers, cover, vent, invert levels — specified on the drawing and signed for.",
+          "axis": "signed",
+          "val": 2,
+          "needsOwner": 1,
+          "lockNote": "There is nobody on your team who can sign a detail.",
+          "img": "img/7c-detailed.jpg"
+        }
+      ]
+    },
+    {
+      "eyebrow": "The certificate",
+      "title": "Moving in.",
+      "scene": "The house is finished. The occupancy certificate is another round of inspections and about six weeks.",
+      "banner": "img/b8-certificate.jpg",
+      "options": [
+        {
+          "label": "Just move in",
+          "cost": 0,
+          "note": "The OC matters for people taking bank loans. You aren't.",
+          "axis": "oc",
+          "val": 0,
+          "img": null
+        },
+        {
+          "label": "Apply for the occupancy certificate",
+          "cost": 18000,
+          "note": "They'll come and inspect before they issue it.",
+          "axis": "oc",
+          "val": 1,
+          "img": null
+        }
+      ]
+    }
+  ],
+  "advice": {
+    "maistry": {
+      "who": "Shivanna, maistry",
+      "lines": [
+        "Sir, I've done this four times on this road. Same thing.",
+        "Vastu is important. The rest we will manage on site.",
+        "Rings are strongest. Cement, no crack.",
+        "Close it fully. Otherwise smell will come.",
+        "Pipe? Nobody puts pipe here.",
+        "Drain is there only at the corner, we'll connect.",
+        "For panchayat no need of all that paper.",
+        "House is ready sir. Come and stay."
+      ]
+    },
+    "contractor": {
+      "who": "Ravi, contractor",
+      "lines": [
+        "I'll handle everything including the sanction. One window.",
+        "Put it wherever the vastu man says, we'll work around it.",
+        "Rings are what people take. Brick if you want to spend.",
+        "Flush slab looks neatest. I'd do that.",
+        "Vent is extra work for the plumber. Your call.",
+        "Storm drain connection is quickest.",
+        "Sanction we can do, it's mostly fees.",
+        "OC is a headache honestly. Most don't."
+      ]
+    },
+    "engineer": {
+      "who": "Prakash, civil engineer",
+      "lines": [
+        "I'll do the structure and I can sign the plan myself now.",
+        "Structurally anywhere is fine. Keep it off the footing.",
+        "I can size a proper two-chamber tank if you want it.",
+        "Standard is a manhole. But most clients ask me to close it.",
+        "Vent should be there. IS code asks for it.",
+        "Soak pit is correct for this. Rocky soil though.",
+        "I'll sign the plan. The tank I'll show as a box unless you ask.",
+        "OC — up to you, I'll give the stability certificate either way."
+      ]
+    },
+    "architect": {
+      "who": "Meera, architect",
+      "lines": [
+        "I'll do full drawings — structural, MEP, sanitary, electrical.",
+        "Vastu I can work with. Access I'd think about at drawing stage.",
+        "I'd specify a proper tank. It goes in the working drawings.",
+        "I usually show a cover. Honestly, clients ask me to hide it.",
+        "The vent will be visible in the elevation. I can screen it.",
+        "Soak pit with dispersion — the soil here is rock, it needs it.",
+        "I sign the plan. The tank sits under my seal either way.",
+        "I'd get the OC. They check rainwater harvesting before issuing."
+      ]
+    }
+  },
+  "years": {
+    "banner": "img/b9-years.jpg",
+    "items": [
+      [
+        "Year 1",
+        "You move in. The yard is still mud."
+      ],
+      [
+        "Year 3",
+        "After heavy rain the drain at the corner smells for a week. Everyone's does."
+      ],
+      [
+        "Year 7",
+        "You retile the bathrooms. Nobody goes near the tank."
+      ],
+      [
+        "Year 11",
+        "Your daughter's wedding. Two hundred people in the front yard."
+      ],
+      [
+        "Year 16",
+        "The tank is emptied for the first time. You are at work. Your mother pays ₹1,800 in cash to two men with a truck. Nobody tells you anything about it."
+      ],
+      [
+        "Year 22",
+        "The downstairs toilet backs up on a Tuesday."
+      ]
+    ],
+    "closing": "In twenty-two years, nothing has told you whether any of your eight decisions was a good one.",
+    "cta": "Call someone to empty it"
+  },
+  "worker": {
+    "banner": "img/b10-desludging.jpg",
+    "stamp": "Year 22 · Thursday",
+    "intro": "A truck comes on Thursday. Muniyappa is thirty-four. He has been doing this for eleven years and he is paid ₹1,200 for the tank — for the tank, not for the hour.",
+    "approachBoth": "The truck cannot get past the gate. The tank is behind the house with a 0.7 m gap to the wall, and there is no opening in it. He walks the hose in as far as it goes, which is not far enough.",
+    "approachReach": "The truck cannot reach the tank. He runs the hose from the gate, and it does not have the suction at that length. He will have to do the rest by hand.",
+    "approachSealed": "There is no opening. The slab was cast flush over the whole tank twenty-two years ago. He takes a crowbar to it — twenty minutes of work nobody is paying him for. The hole he makes is about forty centimetres across.",
+    "approachSmall": "The inspection opening is 300 mm. The hose fits. The solids at the bottom do not move. He looks at the opening, and then he takes his shirt off.",
+    "approachOpen": "He backs the truck to the manhole, lifts the cover with the ring, and drops the suction line into the first chamber.",
+    "safe1": "The pump runs for thirty-five minutes. He hoses the cover down, puts it back, signs a slip, and drives to the next house. He is home before dark. Nothing happens to him today, or next year, or in ten years.",
+    "safe2": "Nobody will ever know that this was a decision you made.",
+    "exposure1": "He goes in to the waist to shift the settled sludge by hand. There is air — the vent has been doing its job for twenty-two years — so he does not lose consciousness. He is in there for fifty minutes.",
+    "exposure2": "He is not injured. He will do four more tanks this week. The skin on his legs and forearms will not be right again, and in a few years there will be a cough that does not clear, and neither will be recorded anywhere as connected to this.",
+    "collapse1": "He lowers himself in. The stub vent has moved a little air over twenty-two years, but not enough. Four minutes in, his hands stop working properly and he cannot find the wall.",
+    "collapse2": "The second man pulls him out by the arms. He is unconscious for a few minutes, vomiting, and then sitting on your compound wall breathing hard. They do not go to a hospital. There is no report. He works on Saturday.",
+    "death1": "The tank has been sealed and unvented for twenty-two years. What is inside it is not mostly air. He puts his head and shoulders through the hole he made.",
+    "death2": "He does not call out. That is the part people who have not seen it get wrong — there is no warning and no struggle. He is unconscious before his knees are through the opening.\n\nThe second man goes in after him, which is what always happens, and the second man does not come out either.",
+    "labelSafe": "NOBODY WENT IN",
+    "labelExposure": "ENTERED · CHRONIC EXPOSURE",
+    "labelCollapse": "ENTERED · COLLAPSED",
+    "labelDeath": "TWO DEATHS",
+    "cta": "Break the seal"
+  },
+  "reveal": {
+    "banner": "img/b11-reveal.jpg",
+    "heading1": "WHAT YOU WERE",
+    "heading2": "ACTUALLY DECIDING",
+    "diffCaption": "That is what it would have cost, at the time you were building, to make the tank reachable, openable and vented — about {pct}% of what the house cost you. Muniyappa would have been paid the same ₹1,200 and driven away in thirty-five minutes.",
+    "findingTitle": "The thing to notice",
+    "finding1": "At no point while you were building did anything tell you a choice was wrong. Not the mason, not the price, not the approval, not the twenty-two years. The only number you were ever shown was money.",
+    "finding2": "That is not a flaw in this simulation. That is the finding. The system has no feedback channel from the person who opens the tank back to the person who built it — so the cheapest option stays the sensible one, forever.",
+    "leverage": [
+      [
+        "At the drawing",
+        "If septic detail were a specified, signed item rather than a rectangle — an accountable designer exists."
+      ],
+      [
+        "At the approval",
+        "If the sanction checked disposal and cleanability, not just that a toilet is shown."
+      ],
+      [
+        "At the occupancy certificate",
+        "Rainwater harvesting is already checked and GPS-tagged before OC. A cleanable tank could ride the same gate."
+      ],
+      [
+        "At the mason",
+        "The person who actually builds it, where nobody signs anything, is the only remaining lever."
+      ],
+      [
+        "In the curriculum",
+        "Neither architects nor engineers are taught to design a tank for the person who will one day open it."
+      ]
+    ],
+    "credits": "SANMAN · eGov Foundation. Muniyappa is composite, not a real individual. Costs are indicative for peri-urban Karnataka. Design references IS 2470 : 1985. Legal position references PEMSR Act 2013 and Balram Singh (2023)."
+  }
+}
